@@ -13,12 +13,12 @@ Intel XDK, please start with
 
 App Overview
 ------------
-This example drives a JHD1313m1 LCD as found in the Grive Starter Kit. This connects
-to an i2c buss. It demonstrates the use if the i2c bus. Note that the code will
+This example drives a JHD1313m1 LCD as found in the Grove Starter Kit. This connects
+to an i2c bus. It demonstrates the use of the i2c bus. Note that the code will
 depend on the device you are driving as much as it depends upon the bus.
 
 Still, there is some useful code that you can use in this example.  The purpose of this template
-is to demonstrate driving the i2c buss directly from Javascript. Notice that we need delays between some
+is to demonstrate driving the i2c bus directly from Javascript. Notice that we need delays between some
 of the bus transactions. If you were writing in C, you could use the wait system call, but there is no
 direct equivalent to "wait" in Javascript. Instead we have to set up a callback on a timer. So i2c.js
 creates a queue driven execution engine for i2c devices.
