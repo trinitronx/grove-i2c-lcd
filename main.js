@@ -51,9 +51,9 @@ function rotateColors(display) {
         display.setColor(red, green, blue);
         display.setCursor(0,0);
         display.write(' ' + hostname);
-        display.write('red=' + red + ' grn=' + green + '  ');
         display.setCursor(1,0);
-        display.write('blue=' + blue + '   ');  // extra padding clears out previous text
+        display.write('r=' + red + ' g=' + green + ' ');
+        display.write('b=' + blue + '           ');  // extra padding clears out previous text
     }, 1000);
 }
 
