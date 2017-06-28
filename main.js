@@ -13,6 +13,8 @@
 // we want mraa to be at least version 0.6.1
 var mraa = require('mraa');
 var version = mraa.getVersion();
+var os = require("os");
+var hostname = os.hostname();
 
 if (version >= 'v0.6.1') {
     console.log('mraa version (' + version + ') ok');
@@ -48,6 +50,7 @@ function rotateColors(display) {
         }
         display.setColor(red, green, blue);
         display.setCursor(0,0);
+        display.write(' ' + hostname);
         display.write('red=' + red + ' grn=' + green + '  ');
         display.setCursor(1,0);
         display.write('blue=' + blue + '   ');  // extra padding clears out previous text
